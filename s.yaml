@@ -28,7 +28,7 @@ services:
         ossMountConfig: 
           mountPoints: 
             - bucketName: heygem-test
-              bucketPath: /data
+              bucketPath: data
               endpoint: https://oss-cn-hangzhou-internal.aliyuncs.com
               mountDir: /code/data
               readOnly: false
