@@ -59,7 +59,7 @@ services:
         gpuMemorySize: 8192 # 单位MB
         logConfig:
           project: 'serverless-log'
-          logstore: 'ollama'
+          logstore: 'default'
       triggers:
         - name: httpTrigger
           type: http
