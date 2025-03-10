@@ -25,13 +25,6 @@ services:
         name: "heygem"
         description: 'heygem api server'
         vpcConfig: auto
-        nasConfig:
-          userId: 0
-          groupId: 0
-          mountPoints:
-            - serverAddr: 03808482b2-nwn30.cn-hangzhou.nas.aliyuncs.com
-              nasDir: /heygem-data
-              fcDir: /code/data
       function:
         name: "heygem-api"
         description: 'heygem api'
