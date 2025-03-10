@@ -44,6 +44,8 @@ services:
           PYTORCH_CUDA_ALLOC_CONF: "max_split_size_mb:512"
         customContainerConfig: 
           image: "registry.cn-hangzhou.aliyuncs.com/dbsnolimit/heygem.ai:0.0.7_sdk_slim"
+          command: '["python"]'
+          args: '["app_local.py"]'
         customHealthCheckConfig:
           failureThreshold: 120
           httpGetUrl: /
