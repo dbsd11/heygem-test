@@ -25,6 +25,13 @@ services:
         name: "heygem"
         description: 'heygem api server'
         vpcConfig: auto
+        ossMountConfig: 
+          mountPoints: 
+            - bucketName: heygem-ai
+              bucketPath: /data
+              endpoint: https://oss-cn-hangzhou-internal.aliyuncs.com
+              mountDir: /mnt/data
+              readOnly: false
       function:
         name: "heygem-api"
         description: 'heygem api'
