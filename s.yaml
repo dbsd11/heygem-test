@@ -108,7 +108,7 @@ services:
           NVIDIA_VISIBLE_DEVICES: 0
           NVIDIA_DRIVER_CAPABILITIES: compute,graphics,utility,video,display
         customContainerConfig: 
-          image: "registry.cn-hangzhou.aliyuncs.com/dbsnolimit/linux_amd64_fish-speech-ziming:1.0.39"
+          image: "registry.cn-hangzhou.aliyuncs.com/dbsnolimit/linux_amd64_fish-speech-ziming:latest"
           command: '["/bin/bash"]'
           args: '["-c", "/opt/conda/envs/python310/bin/python3 -m tools.api --listen 0.0.0.0:8080"]'
         customHealthCheckConfig:
